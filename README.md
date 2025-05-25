@@ -2,7 +2,7 @@
 Docker container with Python script that extracts Slide Titles from a PPTX file
 
 **Credit:**  
-The Python script inside this container was authored by [Phil Moore](https://github.com/randomaccess3), he's really done all the hard work. I've just pulled this together into a Docker Container to try and make it quick and easy to use on any system.
+The Python script inside this container was authored by [Phill Moore](https://github.com/randomaccess3), he's really done all the hard work. I've just pulled this together into a Docker Container to try and make it quick and easy to use on any system.
 
 ---
 
