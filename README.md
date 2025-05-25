@@ -15,7 +15,18 @@ The Python script inside this container was authored by [Phill Moore](https://gi
 2. **Verify Docker**  
    ```bash docker --version```
 
-## Clone and Run the Container
+## Pull Public Container from Docker Hub
+
+_You only need to do this OR a Clone from GitHub, you don't need to do both._
+
+1.  **Pull Container from Docker Hub**
+    ```
+    docker pull joshlemon/pptx-slide-title-extractor
+    ```
+
+## Clone Container from GitHub
+
+_You only need to do this OR a Pull from Docker Hub, you don't need to do both._
 
 1.  **Get the Repository**
     
@@ -28,7 +39,11 @@ The Python script inside this container was authored by [Phill Moore](https://gi
    
    ``` docker build -t pptx-slide-title-extractor . ```
 
-3. **Run the Container**
+
+## Run the Container
+
+1. **Run the Container**
+   
    Example: scan current directory for PPTX files and write output.csv in the same dictory
    
    ``` 
@@ -59,6 +74,5 @@ docker run --rm -v "$PWD":/data pptx-slide-title-extractor -d /data/presentation
 ```
 
 ## To Do
-- Publish image to Docker Hub so it can be pulled directly from Docker Hub
-- Add automated building and updates when/if Phil makes updates to the scipt
+- Add automated building and updates when/if Phil makes updates to the scipt so it's updated and pushed to Docker Hub
 - Provide a Windows-specific usage example
