@@ -5,6 +5,8 @@ on:
   pull_request:
     branches:
       - main                  # on PRs targeting main
+    paths:
+      - 'Docker/**'           # only if something under Docker/ changed
 
 permissions:
   contents: read
