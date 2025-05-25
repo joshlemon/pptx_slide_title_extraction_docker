@@ -74,5 +74,4 @@ docker run --rm -v "$PWD":/data pptx-slide-title-extractor -d /data/presentation
 ```
 
 ## To Do
-- Add automated building and updates when/if Phil makes updates to the scipt so it's updated and pushed to Docker Hub
 - Provide a Windows-specific usage example
