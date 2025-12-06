@@ -26,7 +26,7 @@ _You only need to do this OR a Clone from GitHub, you don't need to do both._
 
 ## Clone Container from GitHub
 
-_You only need to do this OR a Pull from Docker Hub, you don't need to do both._
+> You only need to do this OR a Pull from Docker Hub, you don't need to do both.
 
 1.  **Get the Repository**
     
@@ -44,10 +44,10 @@ _You only need to do this OR a Pull from Docker Hub, you don't need to do both._
 
 1. **Run the Container**
    
-   Example: scan current directory for PPTX files and write output.csv in the same dictory
+   Example: scan the current directory for PPTX files and write output.csv in the same directory
    
    ``` 
-   docker run --rm -v "$PWD":/data pptx-slide-title-extractor -d /data -o /data/output.csv
+   docker run --rm -v "$PWD":/data joshlemon/pptx-slide-title-extractor -d /data -o /data/output.csv
    ```
 
 ## Other Flags
@@ -61,16 +61,16 @@ Process all .pptx files in the directory.
 - `-o /path/to/output.csv`
 Path (inside or mounted) where the CSV results should be written. Defaults to output.csv in CWD
 
-## Example Uasge
+## Example Usage
 
 ### Single file
 ```
-docker run --rm -v "$PWD":/data pptx-slide-title-extractor -f /data/mydeck.pptx -o /data/mydeck_titles.csv
+docker run --rm -v "$PWD":/data joshlemon/pptx-slide-title-extractor -f /data/mydeck.pptx -o /data/mydeck_titles.csv
 ```
 
 ### Whole folder
 ```
-docker run --rm -v "$PWD":/data pptx-slide-title-extractor -d /data/presentations -o /data/all_titles.csv
+docker run --rm -v "$PWD":/data joshlemon/pptx-slide-title-extractor -d /data/presentations -o /data/all_titles.csv
 ```
 
 ## To Do
